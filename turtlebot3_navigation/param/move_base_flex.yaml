@@ -1,0 +1,24 @@
+planners:
+  - name: SimplePlanner
+    type: simple_planner/SimplePlanner
+
+# planners:
+#   - name: NavfnROS
+#     type: navfn/NavfnROS
+
+# controllers:
+#   - name: DWAPlannerROS
+#     type: dwa_local_planner/DWAPlannerROS
+
+controllers:
+  - name: RegulatedPurePursuitController
+    type: regulated_pure_pursuit_controller/RegulatedPurePursuitController
+
+controller_frequency: 5.0
+controller_patience: 3.0
+
+planner_frequency: 1.0
+planner_patience: 5.0
+
+oscillation_timeout: 10.0
+oscillation_distance: 0.2

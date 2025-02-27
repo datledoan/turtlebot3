@@ -1,0 +1,4 @@
+# base_global_planner: NavfnROS
+base_global_planner: SimplePlanner
+# base_local_planner: DWAPlannerROS
+base_local_planner: RegulatedPurePursuitController
