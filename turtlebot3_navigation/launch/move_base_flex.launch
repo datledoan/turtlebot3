@@ -9,7 +9,9 @@
     <rosparam file="$(find turtlebot3_navigation)/param/global_costmap_params.yaml" command="load" />
     <rosparam file="$(find turtlebot3_navigation)/param/move_base_flex.yaml" command="load"/>
     <!-- <rosparam file="$(find turtlebot3_navigation)/param/dwa_local_planner_params_$(arg model).yaml" command="load" /> -->
-    <rosparam file="$(find turtlebot3_navigation)/param/regulated_pure_pursuit_controller.yaml" command="load" />
+    <rosparam file="$(find turtlebot3_navigation)/param/mppi_controller_cuda.yaml" command="load" />
+    <!-- <rosparam file="$(find turtlebot3_navigation)/param/mppi_controller_params.yaml" command="load" /> -->
+    <!-- <rosparam file="$(find turtlebot3_navigation)/param/regulated_pure_pursuit_controller.yaml" command="load" /> -->
   </node>
 
   <node name="move_base_legacy_relay" pkg="mbf_costmap_nav" type="move_base_legacy_relay.py">
